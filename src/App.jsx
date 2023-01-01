@@ -1,10 +1,11 @@
 import Main from "./components/Main/Main";
+import Weather from "./components/Weather/Weather";
 
 function App() {
   return (
     <>
       <Main>
-        <div className="weather">LEFT</div>
+        <Weather />
         <div className="panel">RIGHT</div>
       </Main>
     </>
