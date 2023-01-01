@@ -53,5 +53,24 @@ body {
   color: var(--color-white);
   line-height: 1.2;
   background-color: var(--overall-bg-color);
+}
+
+.main {
+  border: solid red;
   min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.wather {
+  border: solid yellow;
+  flex: 1;
+}
+
+.panel {
+  border: solid blue;
+  width: 530px;
+  width: 40%;
 }
