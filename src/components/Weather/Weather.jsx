@@ -10,12 +10,12 @@ function Weather() {
         <h2 className="weather__location">
           <span className="weather__location--main">Cape Town</span>
           <span className="weather__location--sub">
-            23:22 &dash; Monday Jan 2023
+            23:22 - Monday Jan 2023
           </span>
         </h2>
         <div className="weather__condition">
-          <SunnyIcon className="weather__condition--icon" />
-          <span className="weather__condition--type">Sunny</span>
+          <SunnyIcon />
+          <span className="weather__type">Sunny</span>
         </div>
       </div>
     </div>
