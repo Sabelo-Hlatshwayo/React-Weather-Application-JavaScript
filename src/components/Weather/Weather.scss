@@ -1,4 +1,8 @@
 .weather {
-  border: solid yellow;
   flex: 1;
+
+  &__heading {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
