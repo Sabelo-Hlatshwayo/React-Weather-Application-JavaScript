@@ -5,4 +5,15 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 50px;
+
+  &__heading {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
 }
