@@ -3,4 +3,9 @@
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
+  background-image: url(../src/assets/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
