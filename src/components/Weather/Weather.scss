@@ -44,7 +44,12 @@
     gap: 16px;
   }
 
-  .weather__type {
+  &__icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  &__type {
     font-size: 18px;
   }
 }

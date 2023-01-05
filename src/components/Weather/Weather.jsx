@@ -14,7 +14,7 @@ function Weather() {
           </span>
         </h2>
         <div className="weather__condition">
-          <SunnyIcon />
+          <SunnyIcon className="weather__icon" />
           <span className="weather__type">Sunny</span>
         </div>
       </div>
