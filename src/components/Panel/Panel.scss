@@ -1,36 +1,5 @@
 .panel {
-  // border: solid blue;
   width: 530px;
   width: 40%;
   padding: 50px;
-}
-
-.form {
-  display: flex;
-  align-items: center;
-  position: relative;
-
-  &__input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    padding: 8px 0;
-    padding-right: 30px;
-    border-bottom: var(--border-bottom);
-    width: 100%;
-
-    &::placeholder {
-      color: var(--main-text-color);
-    }
-  }
-
-  &__button {
-    position: absolute;
-    right: 0;
-    padding-bottom: 5px;
-  }
-
-  &__icon {
-    fill: var(--main-text-color);
-  }
 }

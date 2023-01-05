@@ -1,19 +1,10 @@
-import SearchIcon from "../../assets/icons/SearchIcon";
+import Form from "../Form/Form";
 import "./Panel.scss";
 
 function Panel() {
   return (
     <div className="panel">
-      <form className="form">
-        <input
-          type="text"
-          placeholder="Search location..."
-          className="form__input"
-        />
-        <button type="submit" className="form__button">
-          <SearchIcon />
-        </button>
-      </form>
+      <Form />
     </div>
   );
 }
