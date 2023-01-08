@@ -1,4 +1,4 @@
-const popularCities = [
+export const popularCities = [
   "pretoria",
   "hong kong",
   "bangkok",
