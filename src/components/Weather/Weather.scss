@@ -1,30 +1,51 @@
+@use "../../index.scss";
+
 .weather {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 50px;
-  // border: solid yellow;
+  align-items: center;
+  justify-content: center;
+
+  @include index.respond(md) {
+    padding: 40px;
+  }
+
+  &__container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: 900px) {
+      justify-content: space-around;
+    }
+  }
 
   &__heading {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
-    // border: solid blue;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    text-align: center;
   }
 
   &__content {
     display: flex;
-    align-items: center;
     gap: 32px;
-    // border: solid pink;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__temperature {
     font-size: 60px;
     font-weight: 400;
-    // border: solid red;
-    // border: solid green;
+
+    @include index.respond(sm) {
+      font-size: 40px;
+    }
   }
 
   &__location {
@@ -38,6 +59,10 @@
 
     &--main {
       font-size: 48px;
+
+      @include index.respond(sm) {
+        font-size: 30px;
+      }
     }
 
     &--sub {

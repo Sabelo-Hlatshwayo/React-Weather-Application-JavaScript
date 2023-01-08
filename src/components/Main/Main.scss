@@ -1,16 +1,21 @@
+@use "../../index.scss";
+
 .main {
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
-  // background-image: linear-gradient(
-  //     to right,
-  //     rgba(0, 0, 0, 0.3),
-  //     rgba(0, 0, 0, 0.3)
-  //   ),
-  //   url(../src/assets/images/background.jpg);
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../src/assets/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  border: solid red;
+
+  @include index.respond(md) {
+    flex-direction: column;
+  }
 }

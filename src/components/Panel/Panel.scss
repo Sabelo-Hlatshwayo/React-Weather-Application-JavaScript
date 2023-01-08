@@ -1,6 +1,22 @@
+@use "../../index.scss";
+
 .panel {
-  width: 530px;
   width: 40%;
-  padding: 50px;
-  border: solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+
+  @media screen and (max-width: 900px) {
+    width: 50%;
+  }
+
+  @include index.respond(md) {
+    width: 100%;
+  }
+
+  .panel__container {
+    height: 80%;
+    flex: 1;
+  }
 }

@@ -6,9 +6,11 @@ import "./Panel.scss";
 function Panel() {
   return (
     <div className="panel">
-      <Form />
-      <Locations />
-      <Details/>
+      <div className="panel__container">
+        <Form />
+        <Locations />
+        <Details />
+      </div>
     </div>
   );
 }
