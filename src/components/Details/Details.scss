@@ -7,4 +7,11 @@
     text-transform: capitalize;
     margin-bottom: 20px;
   }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
