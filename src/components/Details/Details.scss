@@ -1,4 +1,10 @@
 .details {
   padding-bottom: 40px;
   border-bottom: var(--border-bottom);
+
+  &__heading {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
 }
