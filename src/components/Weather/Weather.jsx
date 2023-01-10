@@ -3,7 +3,7 @@ import { useAppContext } from "../../context/features/AppContextProvider";
 import "./Weather.scss";
 
 function Weather() {
-  // console.log(useAppContext());
+  const { activeCity } = useAppContext().state;
 
   return (
     <div className="weather">
@@ -12,7 +12,7 @@ function Weather() {
         <div className="weather__content">
           <span className="weather__temperature">18&#176;</span>
           <h2 className="weather__location">
-            <span className="weather__location--main">Cape Town</span>
+            <span className="weather__location--main">{activeCity}</span>
             <span className="weather__location--sub">
               13:09 - Thursday 22 Aug 2024
             </span>

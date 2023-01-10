@@ -12,5 +12,9 @@
     color: var(--main-text-color);
     text-transform: capitalize;
     cursor: pointer;
+
+    &--active {
+      color: var(--color-orange);
+    }
   }
 }

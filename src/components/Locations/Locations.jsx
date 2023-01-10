@@ -3,15 +3,19 @@ import { useAppContext } from "../../context/features/AppContextProvider";
 import "./Locations.scss";
 
 function Locations() {
-  const { activeCities } = useAppContext().state;
+  const { activeCity, activeCities } = useAppContext().state;
 
-  // console.log(activeCities);
-  console.log(useAppContext().state);
+  const activeCitiesList = activeCities.map((city) => {
+    const isActive = city === activeCity;
 
-  const activeCitiesList = activeCities.map((activeCity) => {
     return (
-      <li className="locations__location" key={uuidv4()}>
-        {activeCity}
+      <li
+        className={`locations__location ${
+          isActive && "locations__location--active"
+        }`}
+        key={uuidv4()}
+      >
+        {city}
       </li>
     );
   });
