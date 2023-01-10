@@ -5,7 +5,8 @@ import "./Locations.scss";
 function Locations() {
   const { activeCities } = useAppContext().state;
 
-  console.log(activeCities);
+  // console.log(activeCities);
+  console.log(useAppContext().state);
 
   const activeCitiesList = activeCities.map((activeCity) => {
     return (

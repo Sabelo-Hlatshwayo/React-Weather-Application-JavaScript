@@ -5,10 +5,10 @@ const generateRandomNumber = (lowerBound, upperBound) => {
   return Math.floor(Math.random() * (upperBound - lowerBound + 1) + lowerBound);
 };
 
-// This function returns a random city from the popularCities array
-export const generateRandomCity = () => {
-  const randomIndex = generateRandomNumber(0, popularCities.length - 1);
-  return popularCities[randomIndex];
+// This function returns a random city from an array of cities
+export const generateRandomCity = (cities) => {
+  const randomIndex = generateRandomNumber(0, cities.length - 1);
+  return cities[randomIndex];
 };
 
 // This function returns an array of random cities of length 4

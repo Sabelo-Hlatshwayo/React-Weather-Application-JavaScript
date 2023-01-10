@@ -1,4 +1,4 @@
-import { useReducer, useEffect, createContext, useContext } from "react";
+import { useReducer, useEffect, createContext, useContext, act } from "react";
 import appReducer from "../reducers/appReducer";
 import ACTIONS from "../actions";
 import { generateRandomCity } from "../../utils/utils";
@@ -8,11 +8,17 @@ const AppContext = createContext(null);
 
 function AppContextProvider({ children }) {
   const initialState = {
-    activeCity: null,
-    activeCities: generateRandomCities(),
-  };
+    initialize: function () {
+      this.activeCities = generateRandomCities();
+      this.activeCity = generateRandomCity(this.activeCities);
+      delete this.initialize;
+      return this;
+    },
+  }.initialize();
 
   const [state, dispatch] = useReducer(appReducer, initialState);
+
+  // console.log(state);
 
   // useEffect(() => {
 
