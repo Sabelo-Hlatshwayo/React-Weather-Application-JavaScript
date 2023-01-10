@@ -1,7 +1,10 @@
 import SunnyIcon from "../../assets/icons/SunnyIcon";
+import { useAppContext } from "../../context/features/AppContextProvider";
 import "./Weather.scss";
 
 function Weather() {
+  // console.log(useAppContext());
+
   return (
     <div className="weather">
       <div className="weather__container">

@@ -1,14 +1,21 @@
+import { v4 as uuidv4 } from "uuid";
+import { useAppContext } from "../../context/features/AppContextProvider";
 import "./Locations.scss";
 
 function Locations() {
-  return (
-    <ul className="locations">
-      <li className="locations__location">Cape Town</li>
-      <li className="locations__location">Johannesburg</li>
-      <li className="locations__location">Pretoria</li>
-      <li className="locations__location">Durban</li>
-    </ul>
-  );
+  const { activeCities } = useAppContext().state;
+
+  console.log(activeCities);
+
+  const activeCitiesList = activeCities.map((activeCity) => {
+    return (
+      <li className="locations__location" key={uuidv4()}>
+        {activeCity}
+      </li>
+    );
+  });
+
+  return <ul className="locations">{activeCitiesList}</ul>;
 }
 
 export default Locations;
