@@ -8,9 +8,13 @@
   --overall-bg-color: #111;
   --main-text-color: #ccc;
   --color-orange: #fa6d1b;
+  --panel-bg-color: rgba(110, 110, 110, 0.25);
 
   // BORDERS
   --border-bottom: 1px solid #ccc;
+
+  // SHADOWS
+  --panel-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 // MEDIA QUERY BREAKPOINTS
