@@ -43,6 +43,10 @@
     font-size: 60px;
     font-weight: 400;
 
+    span {
+      font-weight: 300;
+    }
+
     @include index.respond(sm) {
       font-size: 40px;
     }
@@ -52,7 +56,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 16px;
     font-weight: 400;
     text-align: center;
@@ -67,19 +71,22 @@
     }
 
     &--sub {
-      font-size: 14px;
+      font-size: 18px;
     }
   }
 
   &__condition {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
-  }
+    text-align: center;
 
-  &__icon {
-    height: 50px;
-    width: 50px;
+    & > svg {
+      height: 80px;
+      width: 80px;
+    }
   }
 
   &__type {

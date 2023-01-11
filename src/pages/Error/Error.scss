@@ -1,0 +1,20 @@
+.error {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__message {
+    position: absolute;
+    top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-white);
+  }
+}
